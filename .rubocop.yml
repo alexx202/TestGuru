@@ -1,0 +1,26 @@
+require: 
+  - rubocop-performance
+  - rubocop-rails
+
+AllCops:
+  Exclude:
+    - "db/schema.rb" 
+    - 'test/**/*'
+    - 'bin/**/*'
+  TargetRubyVersion: 3.0.0
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+  
+Style/ClassVars:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+  

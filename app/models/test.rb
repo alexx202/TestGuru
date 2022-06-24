@@ -7,9 +7,8 @@ class Test < ApplicationRecord
   has_many :users, through: :tests_users
 
   def self.titles_tests(category)
-    Category
-      .find_by(title: category)
-      .tests
+    joins(:category)
+      .where(categories: { title: category })
       .order(title: :desc)
       .pluck(:title)
   end

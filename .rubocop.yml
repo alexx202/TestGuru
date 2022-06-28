@@ -4,9 +4,9 @@ require:
 
 AllCops:
   Exclude:
-    - "db/schema.rb" 
     - 'test/**/*'
     - 'bin/**/*'
+    - 'db/**/*'
   TargetRubyVersion: 3.0.0
 
 Style/Documentation:

@@ -36,11 +36,11 @@ class QuestionsController < ApplicationController
   end
 
   def find_test
-    @test = Test.find_by id: params[:test_id]
+    @test = Test.find(params[:test_id])
   end
 
   def find_question
-    @question = Question.find_by id: params[:id]
+    @question = Question.find(params[:id])
   end
 
   def rescue_with_question_not_found

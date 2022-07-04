@@ -1,0 +1,7 @@
+<p><%= @test.title %></p>
+<ul>
+  <% @questions.each do |question| %>
+    <li><%= question.body %></li>
+  <% end %>
+<ul>
+<%= link_to 'Edit', edit_question_path(question)

@@ -2,6 +2,8 @@
 <ul>
   <% @questions.each do |question| %>
     <li><%= question.body %></li>
+    <%= link_to 'Edit', edit_question_path(question) %>
+    <%= link_to 'Show', question_path(question) %>
+    <%= link_to 'Destroy', question_path(question), method: :delete, data: { confirm: "Are you shure?"} %>
   <% end %>
 <ul>
-<%= link_to 'Edit', edit_question_path(question)

@@ -21,9 +21,7 @@ class QuestionsController < ApplicationController
     @question = @test.questions.new
   end
 
-  def edit
-
-  end
+  def edit; end
 
   def update
     if @question.save(create_params)
@@ -33,14 +31,12 @@ class QuestionsController < ApplicationController
     end
   end
 
-  def show
-
-  end
-
+  def show; end
 
   def destroy
+    test_id = @question.test.id
     @question.destroy
-    redirect_to test_questions_path
+    redirect_to test_questions_path(test_id)
   end
 
   private

@@ -1,5 +1,5 @@
 class TestPassage < ApplicationRecord
-  PERCENTAGE = 85
+  PERCENTAGE_FOR_PASSING_THE_TEST = 85
 
   belongs_to :user
   belongs_to :test
@@ -16,7 +16,7 @@ class TestPassage < ApplicationRecord
   end
 
   def success?
-    true if percent_result >= PERCENTAGE
+    percent_result >= PERCENTAGE_FOR_PASSING_THE_TEST
   end
 
   def accept!(answer_ids)

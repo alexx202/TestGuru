@@ -1,0 +1,11 @@
+<ul class="nav ul">
+  <% if logged_in? %>
+      <li><%= link_to 'TestGuru', root_path %></li>
+      <li>Welcome, <b><%= current_user.name %></b> to TestGuru</li>
+      <li><%= link_to 'Sign out', signout_path %></li>
+  <% else %>
+      <li><%= link_to 'Sign up', signup_path %></li>
+      <li><%= link_to 'Sign in', login_path %></li>
+  <% end %>
+</ul>
+

@@ -1,15 +1,15 @@
 class ApplicationController < ActionController::Base
   before_action :authenticate_user!
 
-  helper_method :current_user,
-                :logged_in?
+  helper_method :current_user, :logged_in?
 
   private
 
   def authenticate_user!
-    redirect_to login_path, alert: 'Are you a Guru? Verify your data' unless current_user
-
-    cookies[:email] = current_user&.email
+    unless current_user
+      cookies[:requested_path] = request.original_url
+      redirect_to login_path, alert: 'Are you a Guru? Verify your data'
+    end
   end
 
   def current_user

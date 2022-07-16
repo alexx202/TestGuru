@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
 
     if user&.authenticate(params[:password])
       create_user_session(user)
-      redirect_to tests_path
+      redirect_to cookies[:requested_path]
     else
       flash.now[:alert] = 'Verify your name, email, password!'
       render :new

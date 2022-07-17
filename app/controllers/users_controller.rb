@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  skip_before_action :authenticate_user!, only: %i[new create]
 
   def new
     @user = User.new
@@ -10,7 +9,7 @@ class UsersController < ApplicationController
 
     if @user.save
       create_user_session(@user)
-      redirect_to cookies[:requested_path]
+      redirect_to cookies.delete(:requested_path) || root_path
     else
       render :new
     end

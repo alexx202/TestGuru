@@ -1,10 +1,3 @@
-users = User.create!(
-  [
-    { name: 'Alexandr', email: 'alexandr@mail.ru' },
-    { name: 'Anna', email: 'anna@mail.ru' },
-    { name: 'Vladimir', email: 'vladimir@mail.ru' }
-  ]
-)
 
 categories = Category.create!(
   [

@@ -1,3 +1,10 @@
+users = User.create!(
+  [
+    {first_name: 'Jack',last_name: 'J', email: 'jack@example.com', password: '111111', type: 'Admin',},
+    {first_name: 'Anna',last_name: 'A', email: 'anna@example.com', password: '222222', type: 'Admin' }
+  ]
+)
+
 categories = Category.create!(
   [
     { title: 'geography' },
@@ -8,11 +15,11 @@ categories = Category.create!(
 
 tests = Test.create!(
   [
-    { title: 'geography_easy', level: 1, category: categories[0], author: User.first },
-    { title: 'geography_medium', level: 2, category: categories[0], author: User.first  },
-    { title: 'history_of_Rome_easy', level: 1, category: categories[1], author: User.first  },
-    { title: 'history_of_Rome_hard', level: 3, category: categories[1], author: User.first  },
-    { title: 'astronomy', level: 3, category: categories[2], author: User.first  }
+    { title: 'geography_easy', level: 1, category: categories[0], author: users[0] },
+    { title: 'geography_medium', level: 2, category: categories[0], author: users[0]  },
+    { title: 'history_of_Rome_easy', level: 1, category: categories[1], author: users[1]  },
+    { title: 'history_of_Rome_hard', level: 3, category: categories[1], author: users[1]  },
+    { title: 'astronomy', level: 3, category: categories[2], author: users[1]  }
   ]
 )
 

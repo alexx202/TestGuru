@@ -17,6 +17,7 @@ class Admin::TestsController < Admin::BaseController
 
   def create
     @test = Test.new(create_params)
+    @test.author_id = current_user.id
 
     if @test.save
       redirect_to admin_tests_path
@@ -45,6 +46,6 @@ class Admin::TestsController < Admin::BaseController
   end
 
   def create_params
-    params.require(:test).permit(:title, :level, :category_id, :author_id)
+    params.require(:test).permit(:title, :level, :category_id)
   end
 end

@@ -79,6 +79,11 @@ ru:
         many: "Обнаружено %{count} ошибок"
         one: "Обнаружена %{count} ошибка"
         other: "Обнаружено %{count} ошибки"
+    navigation:
+      testguru: "TestGuru"
+      logout: "Выйти"
+      sign_up: "Регистрация"
+      sign_in: "Войти"
 
   tests_mailer:
     completed_test:

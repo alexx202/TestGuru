@@ -77,6 +77,11 @@ en:
       header:
         one: "%{count} error detected"
         other: "%{count} errors detected"
+    navigation:
+      testguru: "TestGuru"
+      logout: "Logout"
+      sign_up: "Sign up"
+      sign_in: "Sign in"
 
   tests_mailer:
     completed_test:

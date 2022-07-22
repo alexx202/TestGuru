@@ -57,6 +57,8 @@ en:
         title: "Title"
         level: "Level"
         category_id: "Category"
+    select:
+      prompt: "Select category"
 
   test_passages:
     result:

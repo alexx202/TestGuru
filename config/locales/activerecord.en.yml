@@ -2,11 +2,25 @@ en:
   activerecord:
     models:
       test: "Test"
-
+      user: "User"
+      category: "Category"
+      question: "Question"
+      answer: "Answer"
     attributes:
       test:
         title: "Title"
-
-    errors:
-      messages:
-        blank: "can't be blank"
+        author_id: "Author"
+        category_id: "Category"
+        level: "Level"
+      user:
+        email: "email"
+        first_name: "First name"
+        last_name: "Last name"
+      category:
+        title: "Title"
+      question:
+        body: "Body"
+        test_id: "Test"
+      answer:
+        body: "Body"
+        question_id: "Question"

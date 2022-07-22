@@ -57,6 +57,8 @@ ru:
         title: "Название"
         level: "Уровень"
         category_id: "Категория"
+    select:
+      prompt: "Выберите категорию"
 
   test_passages:
     result:

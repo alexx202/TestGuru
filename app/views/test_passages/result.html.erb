@@ -1,6 +1,6 @@
-<h1>The <%= @test_passage.test.title %> was been completed!</h1>
+<h1><%= t('.header', title: @test_passage.test.title ) %></h1>
 
-<% if @test_passage.success? %>		
+<% if @test_passage.success? %>
   <h2 class="success">
 	  <p>You passed the test. Your percentage is: <%= @test_passage.percent_result %></p>
   </h2>

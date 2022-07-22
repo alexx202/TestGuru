@@ -2,6 +2,14 @@ en:
   tests:
     index:
       header: "Tricky tests"
+      title: "Title"
+      level: "Level"
+      author: "Author"
+      category: "Category"
+      number_of_question: "Number_of_questions"
+      actions: "Actions"
+    test:
+      start: "Start"
 
   admin:
     tests:
@@ -9,12 +17,41 @@ en:
         success: "Test was successfuly created"
       index:
         header: "Tricky tests"
+        new_test: "New test"
+        title: "Title"
+        level: "Level"
+        author: "Author"
+        category: "Category"
+        number_of_question: "Number_of_questions"
+        actions: "Actions"
+      edit:
+        back: "Back"
+      test:
+        show: "Show"
+        edit: "Edit"
+        delete: "Delete"
+        confirm: "Are you sure"
+      new:
+        back: "Back"
+        create_new_test: "Create new test"
+      show:
+        title: "Title"
+        level: "Level"
+        questions: "Questions"
+        back: "Back"
+        edit: "Edit"
+    nav:
+      admin_panel: "TestGuru Admin Panel"
+      welcome: "Welcome"
+      logout: "Logout"
 
   helpers:
     submit:
       test:
         create: "Create test"
         update: "Update test"
+      test_passages:
+        show: "Next"
     label:
       test:
         title: "Title"
@@ -24,6 +61,14 @@ en:
   test_passages:
     result:
       header: "The %{title} Test was completed"
+      success: "You passed the test. Your percentage is: %{result}"
+      fail: "You didn't pass the test. Your percentage is: %{result}"
+      tests: "Tests"
+    show:
+      passing: "Passing the %{test} Test"
+      number_of_questions: "Number of questions: %{number_of_questions}"
+      question_number: "Question number is %{question_number}"
+      submit: "Next"
 
   shared:
     errors:

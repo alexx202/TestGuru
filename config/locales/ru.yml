@@ -2,6 +2,14 @@ ru:
   tests:
     index:
       header: "Доступные тесты"
+      title: "Название"
+      level: "Уровень"
+      author: "Автор"
+      category: "Категория"
+      number_of_question: "Количество вопросов"
+      actions: "Действия"
+    test:
+      start: "Старт"
 
   admin:
     tests:
@@ -9,12 +17,41 @@ ru:
         success: "Тест успешно создан"
       index:
         header: "Доступные тесты"
+        new_test: "Новый тест"
+        title: "Название"
+        level: "Уровень"
+        author: "Автор"
+        category: "Категория"
+        number_of_question: "Количество вопросов"
+        actions: "Действия"
+      edit:
+        back: "Назад"
+      test:
+        show: "Показать"
+        edit: "Редактировать"
+        delete: "Удалить"
+        confirm: "Вы уверены?"
+      new:
+        back: "Назад"
+        create_new_test: "Создать новый тест"
+      show:
+        title: "Название"
+        level: "Уровень"
+        questions: "Вопросы"
+        back: "Назад"
+        edit: "Редактировать"
+    nav:
+      admin_panel: "Панель Админа TestGuru"
+      welcome: "Добро пожаловать"
+      logout: "Выйти"
 
   helpers:
     submit:
       test:
         create: "Создать тест"
         update: "Обновить тест"
+      test_passages:
+        show: "Следующий"
     label:
       test:
         title: "Название"
@@ -24,6 +61,14 @@ ru:
   test_passages:
     result:
       header: "Тест %{title} успешно завершен"
+      success: "Вы прошли тест. Ваш результат: %{result}%"
+      fail: "Вы не прошли тест. Ваш результат: %{result}%"
+      tests: "Тесты"
+    show:
+      passing: "Прохождение теста: %{test}"
+      number_of_questions: "Количество вопросов: %{number_of_questions}"
+      question_number: "Номер вопроса: %{question_number}"
+      submit: "Далее"
 
   shared:
     errors:

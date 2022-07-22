@@ -2,12 +2,12 @@
 
 <% if @test_passage.success? %>
   <h2 class="success">
-	  <p>You passed the test. Your percentage is: <%= @test_passage.percent_result %></p>
+	  <p><%= t('.success', result: @test_passage.percent_result ) %></p>
   </h2>
 <% else %>
   <h2 class="fail">
-    <p>You didn't pass the test. Your percentage is: <%= @test_passage.percent_result %></p>
+    <p><%= t('.fail', result: @test_passage.percent_result ) %></p>
   </h2>
 <% end %>
 
-<p><%= link_to "Tests", tests_path %></p>
+<p><%= link_to t('.tests'), tests_path %></p>

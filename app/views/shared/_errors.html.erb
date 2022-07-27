@@ -1,9 +1,18 @@
-<% if resource.errors.present? %>
-  <h2><%= t('.header', count: resource.errors.count) %></h2>
+<div class="container mt-1">
+  <div class="row justify-content-center mt-1">
+    <div class="col col-md-4">
+      <% if resource.errors.present? %>
+        <div class="alert alert-danger", role="alert">
 
-  <ul>
-    <% resource.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
-    <% end %>
-  </ul>
-<% end %>
+          <h2><%= t('.header', count: resource.errors.count) %></h2>
+
+          <ul class="mb-1">
+            <% resource.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

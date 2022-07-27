@@ -42,8 +42,9 @@ en:
         edit: "Edit"
     nav:
       admin_panel: "TestGuru Admin Panel"
-      welcome: "Welcome"
+      welcome: "Welcome %{user}"
       logout: "Logout"
+      testguru: "TestGuru"
 
   helpers:
     submit:
@@ -82,6 +83,7 @@ en:
       logout: "Logout"
       sign_up: "Sign up"
       sign_in: "Sign in"
+      welcome: "Welcome %{user}"
 
   tests_mailer:
     completed_test:

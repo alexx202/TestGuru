@@ -1,9 +1,9 @@
-<tr>
+<tr class="text-center">
   <td><%= test.title %></td>
   <td align="center"><%= test_level(test) %></td>
   <td align="center"><%= test.author.first_name %></td>
   <td align="center"><%= test.category.title %></td>
   <td align="center"><%= test.questions.count %></td>
 
-  <td><%= button_to t('.start'), start_test_path(test) %></td>
+  <td><%= button_to t('.start'), start_test_path(test), class: "btn btn-primary btn-sm" %></td>
 </tr>

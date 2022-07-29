@@ -72,6 +72,9 @@ en:
       number_of_questions: "Number of questions: %{number_of_questions}"
       question_number: "Question number is %{question_number}"
       submit: "Next"
+    gist:
+      success: "Gist was successfuly created"
+      fail: "An error occured while saving gist"
 
   shared:
     errors:

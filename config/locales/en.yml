@@ -45,6 +45,12 @@ en:
       welcome: "Welcome %{user}"
       logout: "Logout"
       testguru: "TestGuru"
+    gists:
+      index:
+        header: "Gists"
+        user: "User"
+        question: "Question"
+        url: "URL"
 
   helpers:
     submit:
@@ -72,9 +78,9 @@ en:
       number_of_questions: "Number of questions: %{number_of_questions}"
       question_number: "Question number is %{question_number}"
       submit: "Next"
-    gist:
-      success: "Gist was successfuly created"
-      fail: "An error occured while saving gist"
+  gists:
+    success: "Gist was successfuly created, %{url}"
+    fail: "An error occured while saving gist"
 
   shared:
     errors:
@@ -91,3 +97,8 @@ en:
   tests_mailer:
     completed_test:
       subject: "You just completed the TestGuru test"
+
+  gist_question_service:
+    gist_params:
+      description: "A question about %{title} from TestGuru"
+      file_name: "test-guru-question.txt"

@@ -45,6 +45,12 @@ ru:
       welcome: "Добро пожаловать %{user}"
       logout: "Выйти"
       testguru: "TestGuru"
+    gists:
+      index:
+        header: "Gists"
+        user: "User"
+        question: "Question"
+        url: "URL"
 
   helpers:
     submit:
@@ -73,7 +79,7 @@ ru:
       question_number: "Номер вопроса: %{question_number}"
       submit: "Далее"
     gist:
-      success: "Gist успешно сохранен"
+      success: "Gist успешно сохранен, %{url}"
       fail: "Во время сохранения Gist произошла ошибка"
 
   shared:
@@ -93,3 +99,8 @@ ru:
   tests_mailer:
     completed_test:
       subject: "Вы успешно завершили тест"
+
+  gist_question_service:
+    gist_params:
+      description: "A question about %{@test.title} from TestGuru"
+      file_name: "test-guru-question.txt"

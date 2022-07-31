@@ -79,7 +79,7 @@ ru:
       question_number: "Номер вопроса: %{question_number}"
       submit: "Далее"
     gist:
-      success: "Gist успешно сохранен, %{url}"
+      success: "Gist успешно сохранен"
       fail: "Во время сохранения Gist произошла ошибка"
 
   shared:

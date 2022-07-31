@@ -79,7 +79,7 @@ en:
       question_number: "Question number is %{question_number}"
       submit: "Next"
   gists:
-    success: "Gist was successfuly created, %{url}"
+    success: "Gist was successfuly created"
     fail: "An error occured while saving gist"
 
   shared:

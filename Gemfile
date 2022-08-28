@@ -27,6 +27,8 @@ gem 'devise', '~> 4.8'
 
 gem 'rails-i18n', '~> 7.0.0'
 
+gem 'octicons_helper'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

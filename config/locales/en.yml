@@ -40,6 +40,8 @@ en:
         questions: "Questions"
         back: "Back"
         edit: "Edit"
+      form_inline:
+        submit: "OK"
     nav:
       admin_panel: "TestGuru Admin Panel"
       welcome: "Welcome %{user}"

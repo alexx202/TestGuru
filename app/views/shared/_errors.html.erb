@@ -1,17 +1,20 @@
 <div class="container mt-1">
   <div class="row justify-content-center mt-1">
     <div class="col col-md-4">
-      <% if resource.errors.present? %>
-        <div class="alert alert-danger", role="alert">
-
-          <h2><%= t('.header', count: resource.errors.count) %></h2>
+      <% if resource.present? && resource.errors.present? %>
+        <%= content_tag :div,
+                        class: 'resource-errors alert alert-danger',
+                        data: { resource_id: resource.id } do %>
+          <h2>
+            <%= t('.header', count: resource.errors.count) %>
+          </h2>
 
           <ul class="mb-1">
             <% resource.errors.full_messages.each do |message| %>
               <li><%= message %></li>
             <% end %>
           </ul>
-        </div>
+        <% end %>
       <% end %>
     </div>
   </div>

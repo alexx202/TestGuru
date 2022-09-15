@@ -40,6 +40,8 @@ ru:
         questions: "Вопросы"
         back: "Назад"
         edit: "Редактировать"
+      form_inline:
+        submit: "ОК"
     nav:
       admin_panel: "Панель Админа TestGuru"
       welcome: "Добро пожаловать %{user}"
